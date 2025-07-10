@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Hub - Advanced Training Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-animation">
+                    <span>P</span><span>H</span>
+                </div>
+            </div>
+            <div class="loading-text">Placement Hub</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="Training Hub/images/logo.png" alt="Placement Hub" class="nav-logo">
+                <span class="brand-text">Placement Hub</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#sessions" class="nav-link" data-section="sessions">Sessions</a>
+                <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
+                <a href="#team" class="nav-link" data-section="team">Team</a>
+                <a href="#blog" class="nav-link" data-section="blog">Blog</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Dynamic Background -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-slide active" style="background-image: url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="floating-elements">
+            <div class="floating-element" style="--delay: 0s; --duration: 8s;"></div>
+            <div class="floating-element" style="--delay: 2s; --duration: 10s;"></div>
+            <div class="floating-element" style="--delay: 4s; --duration: 12s;"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Bridging</span>
+                    <span class="title-line highlight">Academia</span>
+                    <span class="title-line">& Industry</span>
+                </h1>
+                <p class="hero-subtitle">Empowering students with cutting-edge placement training and industry connections</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('sessions')">
+                        <span>Explore Sessions</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('gallery')">
+                        <span>View Gallery</span>
+                        <i class="fas fa-images"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item" data-count="500">
+                    <div class="stat-number">0+</div>
+                    <div class="stat-label">Students Trained</div>
+                </div>
+                <div class="stat-item" data-count="50">
+                    <div class="stat-number">0+</div>
+                    <div class="stat-label">Companies</div>
+                </div>
+                <div class="stat-item" data-count="95">
+                    <div class="stat-number">0%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">About Us</span>
+                <h2 class="section-title">Our Mission & Vision</h2>
+                <p class="section-description">Transforming careers through innovative training and industry partnerships</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-target"></i>
+                        </div>
+                        <h3>Our Goal</h3>
+                        <p>To bridge the gap between academic learning and industry requirements, ensuring students are placement-ready with cutting-edge skills and professional competencies.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Industry-aligned curriculum</li>
+                            <li><i class="fas fa-check"></i> Expert mentorship</li>
+                            <li><i class="fas fa-check"></i> Real-world projects</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="visual-container">
+                        <div class="progress-circle" data-percentage="95">
+                            <div class="circle-content">
+                                <span class="percentage">95%</span>
+                                <span class="label">Success Rate</span>
+                            </div>
+                        </div>
+                        <div class="achievement-badges">
+                            <div class="badge">
+                                <i class="fas fa-award"></i>
+                                <span>Excellence Award</span>
+                            </div>
+                            <div class="badge">
+                                <i class="fas fa-users"></i>
+                                <span>500+ Alumni</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessions Section -->
+    <section id="sessions" class="sessions-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Training Programs</span>
+                <h2 class="section-title">Our Sessions</h2>
+                <p class="section-description">Comprehensive training programs designed for placement success</p>
+            </div>
+
+            <div class="sessions-grid">
+                <div class="session-card">
+                    <div class="card-image">
+                        <img src="Training Hub/images/c1.jpg" alt="Walking With HR">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-category">HR Training</div>
+                        <h3 class="card-title">Walking With HR</h3>
+                        <p class="card-description">Interactive sessions with HR professionals to understand recruitment processes and interview techniques.</p>
+                        <div class="card-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 2 hours</span>
+                            <span class="level"><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="session-card">
+                    <div class="card-image">
+                        <img src="Training Hub/images/c2.jpg" alt="Ministry of Defence">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-category">Special Event</div>
+                        <h3 class="card-title">Ministry of Defence Session</h3>
+                        <p class="card-description">Exclusive opportunity to interact with defense sector professionals and explore career opportunities.</p>
+                        <div class="card-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 3 hours</span>
+                            <span class="level"><i class="fas fa-signal"></i> Advanced</span>
+                        </div>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="session-card">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Technical Training">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-category">Technical</div>
+                        <h3 class="card-title">Technical Interview Prep</h3>
+                        <p class="card-description">Comprehensive technical interview preparation covering coding, system design, and problem-solving.</p>
+                        <div class="card-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 4 hours</span>
+                            <span class="level"><i class="fas fa-signal"></i> All Levels</span>
+                        </div>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section with Real-time Carousel -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Moments</span>
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-description">Capturing memories from our training sessions and events</p>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-carousel" id="galleryCarousel">
+                    <div class="gallery-track" id="galleryTrack">
+                        <div class="gallery-slide">
+                            <img src="Training Hub/images/c1.jpg" alt="HR Training Session">
+                            <div class="slide-overlay">
+                                <h3>HR Training Session</h3>
+                                <p>Interactive workshop with industry professionals</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="Training Hub/images/c2.jpg" alt="Ministry of Defence Event">
+                            <div class="slide-overlay">
+                                <h3>Ministry of Defence Event</h3>
+                                <p>Special session with defense sector experts</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="Training Hub/images/b1.jpg" alt="CEO Interaction">
+                            <div class="slide-overlay">
+                                <h3>Walking With CEO</h3>
+                                <p>Exclusive interaction with industry leaders</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="Training Hub/images/b2.jpg" alt="HR Concave">
+                            <div class="slide-overlay">
+                                <h3>HR Concave</h3>
+                                <p>Professional development workshop</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Technical Training">
+                            <div class="slide-overlay">
+                                <h3>Technical Training</h3>
+                                <p>Coding and technical interview preparation</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Group Discussion">
+                            <div class="slide-overlay">
+                                <h3>Group Discussion</h3>
+                                <p>Communication skills development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-controls">
+                    <button class="gallery-btn prev-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="gallery-btn next-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="gallery-indicators" id="galleryIndicators"></div>
+            </div>
+
+            <!-- Album Grid -->
+            <div class="album-grid">
+                <div class="album-item" data-category="training">
+                    <img src="Training Hub/images/c1.jpg" alt="Training Session">
+                    <div class="album-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="album-item" data-category="events">
+                    <img src="Training Hub/images/c2.jpg" alt="Special Event">
+                    <div class="album-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="album-item" data-category="workshops">
+                    <img src="Training Hub/images/b1.jpg" alt="Workshop">
+                    <div class="album-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="album-item" data-category="training">
+                    <img src="Training Hub/images/b2.jpg" alt="HR Training">
+                    <div class="album-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="album-item" data-category="workshops">
+                    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Technical Workshop">
+                    <div class="album-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="album-item" data-category="events">
+                    <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Group Event">
+                    <div class="album-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Team</span>
+                <h2 class="section-title">Student Coordinators</h2>
+                <p class="section-description">Meet the dedicated team driving placement success</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="card-image">
+                        <img src="Training Hub/images/client1.png" alt="Manish Edwin">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="member-name">Manish Edwin</h3>
+                        <p class="member-role">CSE - IV Year</p>
+                        <p class="member-description">Technical training coordinator specializing in coding sessions and software interview preparation.</p>
+                        <div class="skills">
+                            <span class="skill-tag">Technical Training</span>
+                            <span class="skill-tag">Coding</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-image">
+                        <img src="Training Hub/images/client2.png" alt="Eswaramoorthi Mahalingam">
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/eswaramoorthimahalingam/"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="member-name">Eswaramoorthi Mahalingam</h3>
+                        <p class="member-role">AI&DS - IV Year</p>
+                        <p class="member-description">Placement drive coordinator managing recruitment processes and student guidance.</p>
+                        <div class="skills">
+                            <span class="skill-tag">AI & Data Science</span>
+                            <span class="skill-tag">Coordination</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-image">
+                        <img src="Training Hub/images/client5.png" alt="Priyadharshini">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="member-name">Priyadharshini</h3>
+                        <p class="member-role">CSE - IV Year</p>
+                        <p class="member-description">Women in tech advocate organizing workshops and mentoring sessions for female students.</p>
+                        <div class="skills">
+                            <span class="skill-tag">Mentoring</span>
+                            <span class="skill-tag">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-image">
+                        <img src="Training Hub/images/client4.png" alt="Kodeeswaran">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="member-name">Kodeeswaran</h3>
+                        <p class="member-role">CSE - IV Year</p>
+                        <p class="member-description">Communication specialist facilitating company interactions and student support.</p>
+                        <div class="skills">
+                            <span class="skill-tag">Communication</span>
+                            <span class="skill-tag">Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Latest Updates</span>
+                <h2 class="section-title">Blog & News</h2>
+                <p class="section-description">Stay updated with the latest placement trends and success stories</p>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card featured">
+                    <div class="card-image">
+                        <img src="Training Hub/images/b1.jpg" alt="Walking With CEO">
+                        <div class="card-date">
+                            <span class="day">17</span>
+                            <span class="month">Feb</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-category">Industry Connect</div>
+                        <h3 class="card-title">Walking With CEO</h3>
+                        <p class="card-excerpt">Exclusive interaction session with industry leaders sharing insights on career growth and industry trends.</p>
+                        <div class="card-meta">
+                            <span class="author"><i class="fas fa-user"></i> Admin</span>
+                            <span class="read-time"><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <button class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="card-image">
+                        <img src="Training Hub/images/b2.jpg" alt="HR Concave">
+                        <div class="card-date">
+                            <span class="day">17</span>
+                            <span class="month">Jun</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-category">Training</div>
+                        <h3 class="card-title">HR Concave</h3>
+                        <p class="card-excerpt">Comprehensive HR training session focusing on interview skills and professional development.</p>
+                        <div class="card-meta">
+                            <span class="author"><i class="fas fa-user"></i> Admin</span>
+                            <span class="read-time"><i class="fas fa-clock"></i> 3 min read</span>
+                        </div>
+                        <button class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">Ready to start your placement journey? Let's connect!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>+91 9944244241</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>Ckecplacement1@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Christ the King Engineering College</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                            <label for="phone">Phone</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="Training Hub/images/logo.png" alt="Placement Hub" class="footer-logo">
+                    <h3>Placement Hub</h3>
+                    <p>Bridging Academia and Industry for a brighter future.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#sessions">Sessions</a></li>
+                        <li><a href="#team">Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9944244241</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Ckecplacement1@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ckec.ac.in/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Placement Hub. All rights reserved.</p>
+                <p>Designed by <a href="https://www.linkedin.com/in/eswaramoorthimahalingam/">Eswaramoorthi Mahalingam</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <img src="" alt="" id="modalImage">
+            <div class="modal-nav">
+                <button class="modal-prev" id="modalPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="modal-next" id="modalNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
